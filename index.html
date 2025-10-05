@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SupportHR - AI cho nhân sự thông minh</title>
+    <meta name="description" content="SupportHR - Giải pháp AI thông minh cho tuyển dụng và quản lý nhân sự">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+        <!-- Image path normalization note:
+             All image references switched from photo/... (with spaces & accents) to images/ subfolders:
+             images/logos/  (fpt.png, topcv.png, vinedimex.jpg, hb.jpg, 2.jpg, logo.jpg)
+             images/team/   (topcv2.jpg, hackathon-2024.jpg, kinh-doanh-2024.jpg, contact.jpg)
+             images/awards/ (khuyen-khich-tin-hoc-tre.jpg, nhat-khu-vuc.png, giai-nhi-tin-hoc-tre-hai-phong.jpg,
+                              sang-tao-thanh-thieu-nien.jpg, vnu-kinh-doanh.jpg, hackathon2024.jpg, fptbiz.jpg)
+             Remember to actually rename & move files in repo to match these new paths before deploy.
+        -->
+        <link rel="icon" type="image/jpg" href="images/logos/logo.jpg">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <h1>SupportHR</h1>
+                </a>
+                <nav class="main-nav">
+                    <button class="nav-toggle" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <ul id="primary-menu">
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#features">Sản phẩm</a></li>
+                        <li><a href="#partners">Đối tác</a></li>
+                        <li><a href="#achievements">Thành tích</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="container">
+            <div class="hero-content">
+                <h2 id="hero-heading">AI cho nhân sự <span class="highlight">thông minh</span></h2>
+                <p class="lead">Giải pháp công nghệ tiên tiến giúp doanh nghiệp tối ưu quy trình tuyển dụng và quản lý nhân sự</p>
+                <div class="cta-buttons">
+                    <a href="#features" class="btn primary">Khám phá</a>
+                    <a href="#partners" class="btn outline">Đối tác</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">Về chúng tôi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p><strong>SupportHR</strong> - <em>đội ngũ tài năng trẻ</em> đến từ <span class="highlight-text">FPT School Hải Phòng</span>, là những người tiên phong với niềm đam mê mãnh liệt về công nghệ AI và khát vọng đổi mới. Chúng tôi không ngừng nghiên cứu và phát triển các <strong>giải pháp nhân sự thông minh</strong>, tạo nên cuộc cách mạng trong quy trình tuyển dụng và quản lý nhân sự cho doanh nghiệp hiện đại.</p>
+                    <p>Với tầm nhìn chiến lược về việc tích hợp <span class="highlight-text">trí tuệ nhân tạo</span> vào lĩnh vực HR, chúng tôi tự hào mang đến những sản phẩm công nghệ đột phá, được thiết kế đặc biệt để đáp ứng nhu cầu ngày càng phức tạp của doanh nghiệp trong kỷ nguyên số. <strong>SupportHR</strong> - nơi công nghệ gặp gỡ nhân sự, tạo nên tương lai mới!</p>
+                </div>
+                <div class="photo-carousel" id="teamCarousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <!-- Đưa ảnh thử nghiệm TopCV lên đầu và active -->
+                            <div class="carousel-slide active">
+                                <img src="images/team/topcv2.jpg" alt="Thử nghiệm tại TopCV">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/team/hackathon-2024.jpg" alt="Đội ngũ tại Hackathon 2024">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/team/kinh-doanh-2024.jpg" alt="Hoạt động kinh doanh 2024">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/team/contact.jpg" alt="Liên hệ và kết nối">
+                            </div>
+                        </div>
+                        <button class="carousel-control prev" data-dir="-1" aria-label="Previous slide">❮</button>
+                        <button class="carousel-control next" data-dir="1" aria-label="Next slide">❯</button>
+                    </div>
+                    <!-- Removed carousel dots as per request -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-features" id="features">
+        <div class="container">
+            <h2 class="section-title">Chức năng sản phẩm</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <span class="icon">📋</span>
+                    </div>
+                    <h3>Quy trình Tuyển dụng CV</h3>
+                    <p>Hệ thống AI thông minh giúp doanh nghiệp tự động lọc và chấm điểm CV theo tiêu chí tuyển dụng. Tiết kiệm thời gian, nâng cao hiệu quả và chọn lọc ứng viên chất lượng.</p>
+                    <ul class="feature-list">
+                        <li>Phân tích kỹ năng tự động</li>
+                        <li>Xếp hạng ứng viên theo tiêu chí</li>
+                        <li>Đánh giá mức độ phù hợp</li>
+                    </ul>
+                    <div class="feature-cta">
+                        <a href="https://offical-hr-support.vercel.app/" target="_blank" class="feature-btn">Dùng ngay</a>
+                    </div>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <span class="icon">📝</span>
+                    </div>
+                    <h3>Chuẩn hóa JD</h3>
+                    <p>Công cụ phân tích và tái cấu trúc mô tả công việc (JD) giúp nhà tuyển dụng tạo ra JD chuyên nghiệp, hấp dẫn và tối ưu hóa cho SEO tuyển dụng.</p>
+                    <ul class="feature-list">
+                        <li>Đề xuất từ khóa tuyển dụng</li>
+                        <li>Tạo mẫu JD theo ngành nghề</li>
+                        <li>Phân tích thị trường lương</li>
+                    </ul>
+                    <div class="feature-cta">
+                        <a href="https://parse-jd.vercel.app/" target="_blank" class="feature-btn">Dùng ngay</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="support-partners-section" aria-labelledby="partners-heading">
+      <div class="support-partners-section__inner">
+                <header class="partners-header">
+                    <h2 id="partners-heading">Đối tác hỗ trợ</h2>
+                    <div class="title-underline" aria-hidden="true"></div>
+                    <p>Hơn 200 cá nhân đến từ nhiều doanh nghiệp khác nhau đã đồng hành cùng chúng tôi trong hành trình phát triển. Đặc biệt, 6 doanh nghiệp đã trực tiếp hỗ trợ thử nghiệm, giúp giải pháp tuyển dụng trở nên hoàn thiện, thực tiễn và hiệu quả hơn.</p>
+                </header>
+        <div class="logo-marquee" aria-label="Dải logo đối tác">
+          <div class="logo-track" id="logoTrack" role="list"></div>
+        </div>
+        <div class="partners-stats" aria-hidden="true">
+          <div class="stat-card"><h3>&nbsp;</h3><p>Placeholder mô tả</p></div>
+          <div class="stat-card"><h3>&nbsp;</h3><p>Placeholder mô tả</p></div>
+          <div class="stat-card"><h3>&nbsp;</h3><p>Placeholder mô tả</p></div>
+          <div class="stat-card"><h3>&nbsp;</h3><p>Placeholder mô tả</p></div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <section class="section alt" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Thành tích & Giải thưởng</h2>
+            <div class="awards-grid">
+                <div class="awards-col awards-col--list">
+                    <div class="awards-list">
+                    <ol class="achievement-list achievement-list--ordered">
+                        <li><strong>2025</strong> · Giải Khuyến khích – Hội thi Tin học Trẻ Toàn quốc</li>
+                        <li><strong>2025</strong> · Giải Nhất – Hội thi Tin học Trẻ Toàn quốc (Vòng Khu vực)</li>
+                        <li><strong>2025</strong> · Giải Nhì – Hội thi Tin học Trẻ Thành phố Hải Phòng</li>
+                        <li><strong>2025</strong> · Giải Đặc biệt – Cuộc thi Sáng tạo Thanh thiếu niên, Nhi đồng Thành phố Hải Phòng</li>
+                        <li><strong>2024</strong> · Top 52 – Cuộc thi Khởi nghiệp Sáng tạo Công nghệ R&D to Start-up</li>
+                        <li><strong>2024</strong> · Giải Triển vọng – FPT Edu Hackathon</li>
+                        <li><strong>2024</strong> · Top 35 – FPT Biz</li>
+                    </ol>
+                    </div>
+                                </div>
+                                <div class="awards-col awards-col--viewer">
+                                    <div class="awards-viewer">
+                                <div class="achievements-carousel" id="achievementsCarousel" aria-label="Carousel Thành tích">
+                    <div class="achievements-carousel-track">
+                        <!-- 1: Giải Khuyến khích – Hội thi Tin học Trẻ Toàn quốc 2025 -->
+                        <figure class="achievement-slide active">
+                            <div class="achievement-image-wrapper">
+                                <img src="images/awards/khuyen-khich-tin-hoc-tre.jpg" alt="Giải Khuyến khích – Hội thi Tin học Trẻ Toàn quốc 2025" class="certificate-img" data-cert="images/awards/khuyen-khich-tin-hoc-tre.jpg">
+                            </div>
+                            <figcaption>
+                                <h3 class="visually-hidden"><span class="achv-icon" aria-hidden="true">🏅</span> Giải Khuyến khích – Hội thi Tin học Trẻ Toàn quốc 2025</h3>
+                            </figcaption>
+                        </figure>
+                        <!-- 2: Giải Nhất – Hội thi Tin học Trẻ Toàn quốc (Vòng Khu vực) 2025 -->
+                        <figure class="achievement-slide">
+                            <div class="achievement-image-wrapper">
+                                <img src="images/awards/nhat-khu-vuc.png" alt="Giải Nhất – Hội thi Tin học Trẻ Toàn quốc (Vòng Khu vực) 2025" class="certificate-img" data-cert="images/awards/nhat-khu-vuc.png">
+                            </div>
+                            <figcaption>
+                                <h3 class="visually-hidden"><span class="achv-icon" aria-hidden="true">🏅</span> Giải Nhất – Hội thi Tin học Trẻ Toàn quốc (Vòng Khu vực) 2025</h3>
+                            </figcaption>
+                        </figure>
+                        <!-- 3: Giải Nhì – Hội thi Tin học Trẻ Thành phố Hải Phòng 2025 -->
+                        <figure class="achievement-slide">
+                            <div class="achievement-image-wrapper">
+                                <img src="images/awards/giai-nhi-tin-hoc-tre-hai-phong.jpg" alt="Giải Nhì – Hội thi Tin học Trẻ Thành phố Hải Phòng 2025" class="certificate-img" data-cert="images/awards/giai-nhi-tin-hoc-tre-hai-phong.jpg">
+                            </div>
+                            <figcaption>
+                                <h3 class="visually-hidden"><span class="achv-icon" aria-hidden="true">🏅</span> Giải Nhì – Hội thi Tin học Trẻ Thành phố Hải Phòng 2025</h3>
+                            </figcaption>
+                        </figure>
+                        <!-- 4: Giải Đặc biệt – Cuộc thi Sáng tạo Thanh thiếu niên, Nhi đồng Thành phố Hải Phòng 2025 -->
+                        <figure class="achievement-slide">
+                            <div class="achievement-image-wrapper">
+                                <img src="images/awards/sang-tao-thanh-thieu-nien.jpg" alt="Giải Đặc biệt – Cuộc thi Sáng tạo Thanh thiếu niên, Nhi đồng Thành phố Hải Phòng 2025" class="certificate-img" data-cert="images/awards/sang-tao-thanh-thieu-nien.jpg">
+                            </div>
+                            <figcaption>
+                                <h3 class="visually-hidden"><span class="achv-icon" aria-hidden="true">🏅</span> Giải Đặc biệt – Cuộc thi Sáng tạo Thanh thiếu niên, Nhi đồng Thành phố Hải Phòng 2025</h3>
+                            </figcaption>
+                        </figure>
+                        <!-- 5: Top 52 – Cuộc thi Khởi nghiệp Sáng tạo Công nghệ R&D to Start-up 2024 -->
+                        <figure class="achievement-slide">
+                            <div class="achievement-image-wrapper">
+                                <img src="images/awards/vnu-kinh-doanh.jpg" alt="Top 52 – Cuộc thi Khởi nghiệp Sáng tạo Công nghệ R&D to Start-up 2024" class="certificate-img" data-cert="images/awards/vnu-kinh-doanh.jpg">
+                            </div>
+                            <figcaption>
+                                <h3 class="visually-hidden"><span class="achv-icon" aria-hidden="true">🏅</span> Top 52 – Cuộc thi Khởi nghiệp Sáng tạo Công nghệ R&D to Start-up 2024</h3>
+                            </figcaption>
+                        </figure>
+                        <!-- 6: Giải Triển vọng – FPT Edu Hackathon 2024 -->
+                        <figure class="achievement-slide">
+                            <div class="achievement-image-wrapper">
+                                <img src="images/awards/hackathon2024.jpg" alt="Giải Triển vọng – FPT Edu Hackathon 2024" class="certificate-img" data-cert="images/awards/hackathon2024.jpg">
+                            </div>
+                            <figcaption>
+                                <h3 class="visually-hidden"><span class="achv-icon" aria-hidden="true">🏅</span> Giải Triển vọng – FPT Edu Hackathon 2024</h3>
+                            </figcaption>
+                        </figure>
+                        <!-- 7: Top 35 – FPT Biz 2024 -->
+                        <figure class="achievement-slide">
+                            <div class="achievement-image-wrapper">
+                                <img src="images/awards/fptbiz.jpg" alt="Top 35 – FPT Biz 2024" class="certificate-img" data-cert="images/awards/fptbiz.jpg">
+                            </div>
+                            <figcaption>
+                                <h3 class="visually-hidden"><span class="achv-icon" aria-hidden="true">🏅</span> Top 35 – FPT Biz 2024</h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <button class="achv-control prev" data-dir="-1" aria-label="Ảnh trước">❮</button>
+                    <button class="achv-control next" data-dir="1" aria-label="Ảnh tiếp">❯</button>
+                    <!-- Removed achievement dots as per request -->
+                                </div>
+                                    </div>
+                                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-branding">
+                    <img src="images/logos/logo.jpg" alt="SupportHR Logo" class="footer-logo" width="48" height="48" loading="lazy">
+                    <h2>SupportHR</h2>
+                    <p class="slogan">AI cho nhân sự thông minh</p>
+                    <div class="footer-actions" aria-label="Hành động nhanh">
+                        <a href="#contact" class="footer-btn footer-btn--outline" title="Liên hệ" role="button">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Liên hệ</h3>
+                    <p>Email: support@supporthr.vn</p>
+                    <p>SĐT: 0123.456.789</p>
+                    <p>FPT School Hải Phòng</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liên kết</h3>
+                    <ul>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#features">Sản phẩm</a></li>
+                        <li><a href="#partners">Đối tác</a></li>
+                        <li><a href="#achievements">Thành tích</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SupportHR. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-certificate-title" tabindex="-1">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-certificate-img" src="" alt="Certificate Full View">
+            <div class="modal-caption">
+                <h3 id="modal-certificate-title"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inject partners marquee script (no conflict) -->
+        <script>
+      (function(){
+                // Raw logo list (can contain duplicates)
+                const rawLogos = [
+                    { src: 'images/logos/fpt.png', alt: 'Đối tác FPT' },
+                    { src: 'images/logos/topcv.png', alt: 'Đối tác TopCV' },
+                    { src: 'images/logos/vinedimex.jpg', alt: 'Đối tác Vinedimex' },
+                    { src: 'images/logos/2.jpg', alt: 'Đối tác 2' },
+                    { src: 'images/logos/hb.jpg', alt: 'Đối tác HB' },
+                    { src: 'images/logos/topcv.png', alt: 'Đối tác TopCV' },
+                    { src: 'images/logos/vinedimex.jpg', alt: 'Đối tác Vinedimex' },
+                    { src: 'images/logos/fpt.png', alt: 'Đối tác FPT' }
+                ];
+
+                function arrangeNoAdjDuplicates(items){
+                    // Use greedy + shuffle retries to avoid adjacent duplicates including loop seam
+                        const maxRetries = 120;
+                        let attempt = 0;
+                        const base = items.slice();
+                        function shuffled(arr){
+                            const c = arr.slice();
+                            for(let i=c.length-1;i>0;i--){
+                                const j=Math.floor(Math.random()*(i+1));
+                                [c[i],c[j]]=[c[j],c[i]];
+                            }
+                            return c;
+                        }
+                        function valid(seq){
+                            for(let i=0;i<seq.length-1;i++){
+                                if(seq[i].src===seq[i+1].src) return false;
+                            }
+                            // Also ensure seam (last->first) not equal for marquee duplicate half
+                            if(seq[0].src===seq[seq.length-1].src) return false;
+                            return true;
+                        }
+                        while(attempt < maxRetries){
+                            const s = shuffled(base);
+                            if(valid(s)) return s;
+                            attempt++;
+                        }
+                        // Fallback: try simple rearrangement
+                        const counts = {};
+                        base.forEach(l=>counts[l.src]=(counts[l.src]||0)+1);
+                        const sorted = base.slice().sort((a,b)=>counts[b.src]-counts[a.src]);
+                        const result = new Array(base.length);
+                        let idx=0;
+                        for(const item of sorted){
+                            result[idx]=item; idx+=2; if(idx>=result.length) idx=1;
+                        }
+                        if(valid(result)) return result;
+                        return base; // worst case
+                }
+
+                const logos = arrangeNoAdjDuplicates(rawLogos);
+                function renderPartnersMarquee(){
+          const track = document.getElementById('logoTrack');
+          if(!track) return;
+          track.innerHTML='';
+          for(let copy=0;copy<2;copy++){
+                        logos.forEach(l=>{ const card=document.createElement('div'); card.className='logo-card'; card.setAttribute('role','listitem'); const img=document.createElement('img'); img.src=l.src; img.alt=l.alt||'Logo đối tác'; img.loading='lazy'; card.appendChild(img); track.appendChild(card); });
+          }
+        }
+        function setupPause(){
+          const marquee=document.querySelector('.logo-marquee');
+          const track=document.querySelector('.logo-track');
+          if(!marquee||!track) return;
+          marquee.addEventListener('mouseenter',()=>track.classList.add('is-paused'));
+          marquee.addEventListener('mouseleave',()=>track.classList.remove('is-paused'));
+          marquee.addEventListener('focusin',()=>track.classList.add('is-paused'));
+          marquee.addEventListener('focusout',()=>track.classList.remove('is-paused'));
+        }
+        document.addEventListener('DOMContentLoaded',()=>{renderPartnersMarquee();setupPause();});
+      })();
+    </script>
+    <!-- existing index.js still loaded below -->
+    <script src="index.js"></script>
+    <script>
+    // Fallback & repaint helper for achievements images
+    (function(){
+        function markMissing(img){
+            if(!img.complete || img.naturalWidth === 0){
+                img.classList.add('img-missing');
+            }
+        }
+        window.addEventListener('load',()=>{
+            const slides = document.querySelectorAll('#achievementsCarousel .achievement-slide');
+            slides.forEach(sl=>{
+               const img = sl.querySelector('img.certificate-img');
+               if(img){
+                   if(!img.complete){
+                       img.addEventListener('error',()=>markMissing(img));
+                       img.addEventListener('load',()=>markMissing(img));
+                   } else {
+                       markMissing(img);
+                   }
+               }
+            });
+            // Force reflow to ensure visibility if previously hidden by conflicting CSS
+            const active = document.querySelector('#achievementsCarousel .achievement-slide.active');
+            if(active){ active.style.animation='none'; void active.offsetWidth; active.style.animation=''; }
+        });
+    })();
+    </script>
+</body>
+</html>
