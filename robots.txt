@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.supporthr-tf.com.vn/sitemap.xml
