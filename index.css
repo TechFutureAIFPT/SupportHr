@@ -194,7 +194,7 @@ ul, ol {
     border-radius: var(--radius-sm);
 }
 
-.logo h1 {
+.logo h1, .logo .logo-text {
     font-size: 1.8rem;
     margin-bottom: 0;
     color: var(--color-white);
@@ -265,7 +265,7 @@ ul, ol {
     margin: 0 auto;
 }
 
-.hero h2 {
+.hero h1, .hero h2 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     color: var(--color-white);
@@ -1390,6 +1390,17 @@ ul, ol {
     padding-bottom: 10px;
 }
 
+/* Inline contact (moved into branding) */
+.contact-inline { margin:10px 0 8px; font-size:1rem; line-height:1.4; color:var(--color-white); font-weight:500; }
+.contact-inline strong { display:inline-block; min-width:72px; }
+.contact-inline a { color:var(--color-orange); text-decoration:none; font-weight:600; }
+.contact-inline a:hover { text-decoration:underline; }
+/* Separate contact column restored */
+.footer-contact p { margin:6px 0; font-size:.95rem; line-height:1.4; }
+.footer-contact p strong { color:var(--color-white); }
+.footer-contact .contact-value { color:var(--color-orange); text-decoration:none; font-weight:600; }
+.footer-contact .contact-value:hover { text-decoration:underline; }
+
 .footer-contact h3::after,
 .footer-links h3::after {
     content: '';
@@ -1429,6 +1440,14 @@ ul, ol {
     opacity: 0.7;
 }
 
+/* Footer social icons (inline under logo) */
+.footer-social { list-style:none; display:flex; gap:14px; margin:10px 0 14px; padding:0; }
+.footer-social li { line-height:1; }
+.footer-social a { display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,0.12); color:#fff; transition:background .25s ease, transform .25s ease; }
+.footer-social a:hover, .footer-social a:focus { background:var(--color-orange); transform:translateY(-3px); outline:none; }
+.footer-social svg { width:22px; height:22px; }
+@media (max-width:640px){ .footer-social { justify-content:center; } }
+
 /* ==============================
    RESPONSIVE STYLES
    ============================== */
@@ -1437,9 +1456,7 @@ ul, ol {
         grid-template-columns: 1fr;
     }
     
-    .hero h2 {
-        font-size: 3rem;
-    }
+    .hero h1, .hero h2 { font-size: 3rem; }
 }
 
 /* ==============================
@@ -1508,9 +1525,7 @@ section.support-partners-section { background: var(--partners-bg); padding: clam
         padding: 140px 0 80px;
     }
     
-    .hero h2 {
-        font-size: 2.5rem;
-    }
+    .hero h1, .hero h2 { font-size: 2.5rem; }
     
     .carousel-track {
         height: 250px;
@@ -1546,9 +1561,7 @@ section.support-partners-section { background: var(--partners-bg); padding: clam
 }
 
 @media (max-width: 576px) {
-    .hero h2 {
-        font-size: 2rem;
-    }
+    .hero h1, .hero h2 { font-size: 2rem; }
     
     .cta-buttons {
         flex-direction: column;
