@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Achievements single-image carousel
     initAchievementsCarousel();
 
+    // Custom analytics events (Vercel Analytics if available)
+    initAnalyticsEvents();
+
 });
 
 // =============================
@@ -354,3 +357,20 @@ function initAchievementsCarousel() {
     start();
 }
 
+// =============================
+// Analytics Events (Vercel)
+// =============================
+function initAnalyticsEvents(){
+    if(typeof window === 'undefined') return;
+    const track = (name, data={}) => { if(window.va) { try { window.va(name, data); } catch(e) { /* swallow */ } } };
+    // Track primary CTAs
+    document.querySelectorAll('.cta-buttons a, .feature-btn').forEach(el=>{
+        el.addEventListener('click', ()=>{
+            track('cta_click', { id: el.textContent.trim(), href: el.getAttribute('href') });
+        }, { passive:true });
+    });
+    // Nav menu clicks
+    document.querySelectorAll('#primary-menu a').forEach(a=>{
+        a.addEventListener('click', ()=>track('nav_click', { target: a.getAttribute('href') }), { passive:true });
+    });
+}
